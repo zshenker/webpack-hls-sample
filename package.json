@@ -1,0 +1,32 @@
+{
+  "name": "webpack-hls-sample",
+  "version": "0.1.0",
+  "description": "Sample of build issues with ",
+  "main": "dist/core.js",
+  "jsnext:main": "src/index.jsx",
+  "files": [
+    "src",
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "bundle": "NODE_ENV=production MINIFY=1 node_modules/.bin/webpack --optimize-occurrence-order --config=webpack.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-function-bind": "^6.8.0",
+    "babel-plugin-transform-object-rest-spread": "^6.8.0",
+    "babel-polyfill": "^6.20.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "file-loader": "^0.9.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "video.js": "^5.14.1",
+    "videojs-contrib-hls": "4.0.3",
+    "webworkify-webpack-dropin": "^1.1.9"
+  }
+}
