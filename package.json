@@ -10,7 +10,8 @@
     "dist"
   ],
   "scripts": {
-    "bundle": "NODE_ENV=production MINIFY=1 node_modules/.bin/webpack --optimize-occurrence-order --config=webpack.config.js"
+    "bundle": "NODE_ENV=production MINIFY=1 node_modules/.bin/webpack --optimize-occurrence-order --config=webpack.config.js",
+    "serve": "node_modules/.bin/webpack-dev-server --config=webpack.config.js --host 0.0.0.0 --port 3000 --inline --watch"
   },
   "devDependencies": {
     "babel-core": "^6.11.4",
@@ -25,8 +26,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "video.js": "^5.14.1",
-    "videojs-contrib-hls": "4.0.3",
+    "video.js": "^5.15.1",
+    "videojs-contrib-hls": "^4.0.3",
     "webworkify-webpack-dropin": "^1.1.9"
   }
 }
