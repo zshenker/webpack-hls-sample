@@ -26,8 +26,8 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "video.js": "^5.15.1",
-    "videojs-contrib-hls": "^4.0.3",
+    "video.js": "5.17.0",
+    "videojs-contrib-hls": "5.2.1",
     "webworkify-webpack-dropin": "^1.1.9"
   }
 }
